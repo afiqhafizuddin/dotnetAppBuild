@@ -4,3 +4,8 @@
 firstDotnetApp/.vs/
 firstDotnetApp/bin/
 firstDotnetApp/obj/
+
+# DotnetDependencies
+
+DotnetDependencies/bin/
+DotnetDependencies/obj/
