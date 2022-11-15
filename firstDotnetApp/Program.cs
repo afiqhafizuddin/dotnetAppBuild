@@ -1,9 +1,7 @@
-﻿using System;
-
-public class Program 
+﻿public class Program  // class code block
 {
-    public static void Main()
-    {   
+    public static void Main() // method code block
+    {
         Console.WriteLine("Hello, World!");
     }
 }
