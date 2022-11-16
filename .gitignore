@@ -9,3 +9,7 @@ firstDotnetApp/obj/
 
 DotnetDependencies/bin/
 DotnetDependencies/obj/
+
+# DebugDotNetApp
+
+DebugDotNetApp/obj/
