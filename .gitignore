@@ -10,5 +10,6 @@ DotnetDependencies/bin/
 DotnetDependencies/obj/
 
 # DebugDotNetApp
+DebugDotNetApp/.vscode
 DebugDotNetApp/obj/
 DebugDotNetApp/bin/
