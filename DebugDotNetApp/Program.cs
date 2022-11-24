@@ -1,4 +1,6 @@
-﻿int result = Fibonacci(5);
+﻿using System.Diagnostics;
+
+int result = Fibonacci(5);
 Console.WriteLine(result);
 
 static int Fibonacci(int n)
@@ -16,3 +18,46 @@ static int Fibonacci(int n)
 
     return n == 0 ? n1 : n2; 
 }
+
+// Logging and tracing in .NET applications
+
+// System.Diagnostics.Trace
+// System.Diagnostics.Debug 
+
+// Both are part of the System.Diagnostics
+
+/*
+    System.Console
+    - Always enabled and always writes to console
+    - Useful for information that your customer might need to see in the release
+    - Simplest approach, use for ad-hoc temp debugging & not checked into source control
+ 
+    System.Diagnostics.Trace
+    - Only enabled when TRACE is defined
+    - Writes to attached listener, by default: DefaultTraceListener
+    - Use this API when you create logs that'll be enabled in most builds
+
+    System.Diagnostis.Debug
+    - Only enabled when DEBUG is defined (in debug mode)
+    - Writes to an attached debugger
+    - Use this API when create logs that will be enabled only in debug mode
+*/
+
+Console.WriteLine("This message is readable by the end-user");
+Trace.WriteLine("This is trace message when tracing the app");
+Debug.WriteLine("This is debug message just for developers");
+
+Debug.Write("Debug - ");
+Debug.WriteLine("This is a full line");
+Debug.WriteLine("This is another full line");
+
+
+// Conditional Tracing
+
+int count = 0;
+if (count == 0)
+{
+    Debug.WriteLine("The count is 0 and this may cause an exception");
+}
+
+Debug.WriteLineIf(count == 0, "The count is 0 and this may cause an exception");
