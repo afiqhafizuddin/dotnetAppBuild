@@ -61,3 +61,18 @@ if (count == 0)
 }
 
 Debug.WriteLineIf(count == 0, "The count is 0 and this may cause an exception");
+
+bool errorFlag = false;
+
+Trace.WriteIf(errorFlag, "Error in AppendDate procedure");
+Debug.WriteIf(errorFlag, "Transaction abandoned");
+Trace.Write("Invalid value for data request");
+
+// verifying that certain condition exists
+
+int intergerDivide(int dividend, int divisor)
+{
+    Debug.Assert(divisor != 0, $"{nameof(divisor)} is 0 and will cause an exception");
+
+    return dividend / divisor;
+}
