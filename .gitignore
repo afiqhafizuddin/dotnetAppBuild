@@ -13,3 +13,7 @@ DotnetDependencies/obj/
 DebugDotNetApp/.vscode
 DebugDotNetApp/obj/
 DebugDotNetApp/bin/
+
+# dirInDotNet
+dirInDotNet/bin/
+dirInDotNet/obj/
