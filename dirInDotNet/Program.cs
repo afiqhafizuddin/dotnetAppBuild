@@ -18,3 +18,7 @@ foreach (var file in allFilesInAllFolders)
 {
     Console.WriteLine(file);
 }
+
+
+// Exercises: Working with file system in .NET applications
+
