@@ -24,7 +24,11 @@ IEnumerable<string> FindFiles(string folderNames)
     return salesFiles;
 }
 
+// work with file paths in .NET
+
 Console.WriteLine(Directory.GetCurrentDirectory());
 
 string documentPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 Console.WriteLine(documentPath);
+
+Console.WriteLine($"stores{Path.DirectorySeparatorChar}201");
