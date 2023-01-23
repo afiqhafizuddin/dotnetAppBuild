@@ -40,3 +40,19 @@ string fileName = $"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparat
 FileInfo info = new FileInfo(fileName);
 
 Console.WriteLine($"Full name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Create date: {info.CreationTime}");
+
+// create and delete files and driectories
+
+// use Directory and File classes to create dir & files
+
+Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores", "201", "newDir"));
+
+
+// make sure sub directories exists
+
+bool doesDirectoryExist = Directory.Exists("C:\\Users\\10103207\\src\\dotnetAppBuild\\dirInDotNet\\stores\\203");
+Console.WriteLine(value: doesDirectoryExist);
+
+// create files
+File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), "greetings.txt"), "Hello World!");
+
